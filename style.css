@@ -1,0 +1,222 @@
+:root{
+    --pink: #e84393;
+}
+
+
+
+
+*{
+    margin: 0%; padding: 0%;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border: none;
+    text-decoration: none;
+    text-decoration: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+section{
+    padding: 1rem 9%;
+}
+
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: #333;
+    color: #fff;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover{
+    background:var(--pink);
+}
+
+
+header{
+    position: fixed;
+    top: 0; left: 0;right: 0;
+    background: rgb(255, 255, 255);
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0.5rem rgba(0,0,0,.1);
+
+
+}
+
+
+
+
+header .logo{
+    font-size: 3rem;
+    color: #333;
+    font-weight: bolder;
+}
+
+header .logo span{
+    color: var(--pink);
+}
+
+header .navbar a{
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #666;
+
+}
+
+header .navbar a:hover{
+    color: var(--pink);
+}
+
+header .icons a{
+    font-size: 2.5rem;
+    color: #333;
+    margin-left: 1.5rem;
+}
+
+header .icons a:hover{
+    color: var(--pink);
+}
+
+
+
+.home{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    /* background-image: url("bg.jpeg");
+    background-size: cover;
+    background-position: center; */
+    background-color:rgb(255, 229, 233);
+
+}
+
+
+.home .content{
+    max-width: 50rem;
+}
+
+.home .content h3{
+    font-size: 50px;
+    color: #333;
+}
+
+.home .content span{
+    font-size: 2.5rem;
+    color:var(--pink);
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.home .content p{
+    font-size: 1.5rem ;
+    color:#999;
+    padding: 15px;
+    line-height: 1.5;
+}
+
+.courses{
+    width: 100%;
+    /* height: 700px; */
+    background-color:rgb(255, 229, 233);
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 60px;
+    box-sizing: border-box;
+}
+.course{
+    width: 22%;
+    height: 350px;
+    background-color:pink;
+    text-align: left;
+    font-size: 19px;
+}
+.course-heading{
+    text-align:center ;
+    /* background-color:; */
+    text-decoration:underline;
+    font-size:40px;
+    /* padding: 15px; */
+}
+
+
+footer{
+    background-color: black;
+    color: white;
+    height: 200px;
+    width: 100vw;
+    display: flex;
+    
+}
+.box1{
+    height: 200px;
+    width: 50vw;
+    /* background: red; */
+    padding: 20px 50px;
+}
+.box2{
+    height: 200px;
+    width: 50vw;
+    /* background:green; */
+    padding: 20px 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:991px) {
+
+    html{
+        font-size: 55%;
+    }
+    header{
+        padding: 2rem;
+    }
+    section{
+        padding: 2rem;
+    }
+}
+
+@media (max-width:768px){
+    header .fa-bars{
+        display: block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top :100%; left: 0;right: 0;
+        background: #eee;
+        border-top: .1rem solid rgba(0,0,0,.1);
+        }
+}
